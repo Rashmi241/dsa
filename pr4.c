@@ -1,10 +1,9 @@
-
 #include<stdio.h>
 int n;
 void selectionsort(int a[])
 {
 int i,j,temp,pos;
-for(i=0;i<n-i;i++)
+for(i=0;i<(n-1);i++)
 {
 pos=i;
 for(j=i+1;j<n;j++)
