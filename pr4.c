@@ -29,7 +29,7 @@ scanf("%d",&n);
 printf("enter the array element\n");
 for(i=0;i<n;i++)
 scanf("%d",&a[i]);
-selectionsort(a);
+selectionsort(a); 
 printf("the element after selection sort:");
 for(i=0;i<n;i++)
 printf("%d\t",a[i]);
