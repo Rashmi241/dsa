@@ -1,3 +1,6 @@
+#infixto postfix conversion
+
+
 #include<stdio.h>
 #include<ctype.h>
 char infix[30],postfix[30];
