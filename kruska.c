@@ -1,5 +1,5 @@
 #include<stdio.h>
-int i,j,n,cost[15][15],v1=0,v2=0;
+int i,j,n,cost[15][15],v1=0,v2=0,mincost;
 void doUnion(int root[],int v1,int v2){
 	int temp,i;
 	temp=root[v2];
@@ -28,7 +28,7 @@ void findMin(){
 }
 void kruskal()
 {
-	int,edgewt;
+	int i,edgewt;
 	int root[n];
 	
 	for(i=0;i<n;i++)
@@ -37,7 +37,7 @@ void kruskal()
 	i=0;
 	while(i!=n-1){
 		findMin();
-		edgwt=cost[v1][v2];
+		edgewt=cost[v1][v2];
 		cost[v1][v2]=cost[v2][v1]=0;
 		if(root[v1]!=root[v2]){
 			printf("\n(%d,%d)",v1,v2);
